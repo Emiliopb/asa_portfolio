@@ -4,41 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Amalia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#eventos">Eventos Destacados</a></li>
-                <li><a href="#mapa">Mapa de Eventos</a></li>
+                <li><a href="#mapa">Mapa</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <section id="inicio">
-        <h1>AMALIA - PRODUCTORA DE EVENTOS</h1>
-        <p>Productora de eventos con experiencia en marcas de renombre en Europa.</p>
-    </section>
-    <section id="eventos">
-        <h2>Eventos Destacados</h2>
-        <!-- Aquí irán los eventos destacados con efectos de hover -->
-    </section>
-    <section id="mapa">
-        <h2>Mapa de Eventos</h2>
-        <!-- Aquí integraremos el mapa minimalista -->
-    </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <!-- Información de contacto o formulario -->
-    </section>
+    <main>
+        <section id="inicio">
+            <h1>Bienvenidos al Portafolio de Amalia</h1>
+            <p>Amalia es una destacada productora de eventos con años de experiencia trabajando con marcas de renombre en toda Europa, como Levi's, Coca-Cola, y Gantt. Especializada en la creación de experiencias memorables, Amalia maneja desde la concepción y planificación hasta la ejecución y el seguimiento post-evento, asegurando siempre resultados excepcionales.</p>
+        </section>
+        <section id="eventos">
+            <h2>Eventos Destacados</h2>
+            <div class="evento">
+                <img src="assets/img/evento-levis.jpg" alt="Evento Levi's">
+                <h3>Levi's Fashion Show</h3>
+                <p>Un desfile de moda innovador organizado en París que presentó la última colección de Levi's, atrayendo a influenciadores clave y cobertura mediática global.</p>
+            </div>
+            <div class="evento">
+                <img src="assets/img/evento-cocacola.jpg" alt="Evento Coca-Cola">
+                <h3>Coca-Cola Summer Bash</h3>
+                <p>Una celebración de verano vibrante en la playa de Barcelona, creando una experiencia de marca inmersiva para Coca-Cola con música en vivo, juegos y degustaciones.</p>
+            </div>
+            <!-- Añade más eventos aquí -->
+            <section id="trabajos">
+                <h2>Trabajos</h2>
+                <div class="container-trabajos">
+                    <div class="trabajo" style="background-image: url('path/to/image1.jpg');">
+                        <div class="trabajo-info">
+                            <h3>Proyecto 1</h3>
+                            <p>Descripción breve del proyecto...</p>
+                        </div>
+                    </div>
+                    <div class="trabajo" style="background-image: url('path/to/image2.jpg');">
+                        <!-- Info del Trabajo -->
+                    </div>
+                    <!-- Más trabajos aquí -->
+                </div>
+            </section>
+            
+        </section>
+        <section id="mapa">
+            <h2>Mapa de Eventos</h2>
+            <div id="eventMap" style="height: 400px;">
+                <!-- Aquí se inicializará el mapa con Leaflet JS -->
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Para más información o para discutir cómo Amalia puede ayudar a hacer de tu próximo evento un éxito rotundo, no dudes en ponerte en contacto.</p>
+            <form>
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Email" required>
+                <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
     <footer>
-        <p>© 2024 ASA.</p>
+        <p> 2024 ASA</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

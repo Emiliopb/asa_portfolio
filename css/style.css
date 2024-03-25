@@ -91,3 +91,89 @@ footer {
     background-color: #fff;
     margin-top: 20px;
 }
+/* Mejoras en la tipografía */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Mejora de la navegación */
+nav ul {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav a {
+    color: #333;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Efectos y transiciones suaves */
+a, .evento {
+    transition: all 0.3s ease;
+}
+a:hover, .evento:hover {
+    transform: scale(1.05);
+}
+
+/* Secciones y contenedores */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer más elegante */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#trabajos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container-trabajos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.trabajo {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.trabajo-info {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    color: white;
+    padding: 20px;
+}
+
+.trabajo:hover .trabajo-info {
+    opacity: 1;
+}
